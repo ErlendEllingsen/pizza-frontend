@@ -1,6 +1,7 @@
-import React, { Component } from React;
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class OrderList extends Component { 
+class OrderList extends Component { 
 
     renderList() {
         return this.props.orders.map((order) => {
@@ -15,3 +16,11 @@ export default class OrderList extends Component {
     }
 
 }
+
+function mapStateToProps(state) {
+    return {
+        orders: state.orders
+    }
+}
+
+export default connect(mapStateToProps)(OrderList);

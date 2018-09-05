@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { Orders } from './orders';
+import Orders from './orders';
 
 const rootReducer = combineReducers({
   //state: (state = {}) => state
