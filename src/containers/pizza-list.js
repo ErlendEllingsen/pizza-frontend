@@ -5,7 +5,7 @@ class OrderList extends Component {
 
     renderList() {
         return this.props.orders.map((order) => {
-            return <li key={order.id}>{order.name}</li>;
+            return <li key={order.name}>{order.name}</li>;
         })
     }
 
